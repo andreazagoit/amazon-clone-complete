@@ -1,0 +1,20 @@
+@import '../style/Colors.scss';
+
+.cartPage {
+    background-color: #eee;
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        .cartPage__main {
+            flex: 1;
+            background-color: $white;
+            padding: 20px;
+        }
+
+        .cartPage__sidebar {
+            width: 300px;
+        }
+    }
+}

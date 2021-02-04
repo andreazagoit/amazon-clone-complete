@@ -1,0 +1,118 @@
+.productPage {
+  .container {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  &__image {
+    display: flex;
+    gap: 20px;
+    &Preview {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .preview__item {
+        height: 60px;
+        width: 60px;
+        cursor: pointer;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+      }
+    }
+    &Image {
+      height: 600px;
+      width: 600px;
+      background-size: contain !important;
+      background-repeat: no-repeat !important;
+      background-position: center !important;
+    }
+  }
+  &__content {
+    &Title {
+      font-size: 20px;
+      font-weight: 500;
+    }
+    &Brand {
+      font-size: 14px;
+      color: #007185;
+      margin-top: 4px;
+      &:hover {
+        color: orange;
+        text-decoration: underline;
+      }
+    }
+    .stars {
+      margin-top: 8px;
+    }
+    &Price {
+      display: flex;
+      .text {
+        text-align: right;
+        padding-right: 5px;
+      }
+      .price {
+        p {
+          font-size: 14px;
+        }
+        p:nth-child(1) {
+          text-decoration: line-through;
+        }
+        p:nth-child(2) {
+          color: #b12704;
+          font-size: 18px;
+          font-weight: 400;
+        }
+        p:nth-child(3) {
+          color: #b12704;
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+    .bold {
+      font-weight: 600;
+    }
+  }
+  &__options {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 8px;
+    &Option {
+      cursor: pointer;
+      height: 40px;
+      width: 40px;
+      background-size: contain !important;
+      background-repeat: no-repeat !important;
+      background-position: center !important;
+    }
+  }
+  &__checkout {
+    min-width: 320px;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    &Price {
+      font-size: 18px;
+      color: #b12704;
+      font-weight: 500;
+    }
+  }
+  .actions {
+    button {
+      font-size: 13px;
+      border: 1px solid gray;
+      border-radius: 3px;
+      line-height: 28px;
+    }
+    button:nth-child(1) {
+      background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+    }
+    button:nth-child(2) {
+      background: linear-gradient(to bottom, #f6c88f, #ed9220);
+    }
+  }
+}

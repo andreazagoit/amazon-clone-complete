@@ -1,0 +1,35 @@
+.loginPage__form {
+  border: 1px solid lightgray;
+  max-width: 320px;
+  margin: 80px auto 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    font-weight: 400;
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  &Label {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 3px;
+  }
+  &Privacy {
+    font-size: 12px;
+    margin-top: 14px;
+  }
+  input,
+  button {
+    line-height: 28px;
+    padding: 0 8px;
+    border-radius: 3px;
+    border: 1px solid gray;
+  }
+  button {
+    margin-top: 14px;
+    background-color: #f0c14b;
+    border-color: #a88734 #9c7e31 #846a29;
+  }
+}
